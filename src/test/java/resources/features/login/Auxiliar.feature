@@ -1,10 +1,10 @@
-@PruebaAuxiliar
+@axuiliarPrueba
 Feature: Prueba Directivo
 
     Background:
         * url baseUrl
-    @SIASIS-TC-12 @API01 @Iniciar-Sesion-Auxiliar
-    Scenario: Inicio de sesión auxiliar
+
+    Scenario: Token de directivo
         Given path '/api/login/auxiliar'
         And request { "Nombre_Usuario": "brigida_gonzales_1535", "Contraseña": "15357278" }
         When method post
