@@ -6,7 +6,7 @@ Feature: Inicio de Sesion de Auxiliar
         * karate.log('🌐 Environments disponibles:', environments)
         * karate.log('🔢 Total de URLs a probar:', environments.length)
 
-    @SIASIS-TC-13 @API01 @Iniciar-Sesion-Auxiliar
+    @SIASIS-TC-12 @API01 @Iniciar-Sesion-Auxiliar
     Scenario: Token de auxiliar en TODAS las URLs disponibles
         * def results = []
         * def successCount = 0
