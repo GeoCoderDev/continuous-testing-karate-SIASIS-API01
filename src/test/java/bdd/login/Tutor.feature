@@ -7,6 +7,7 @@ Feature: Inicio de Sesion de Tutor
         * karate.log('🌐 Environments disponibles:', environments)
         * karate.log('🔢 Total de URLs a probar:', environments.length)
 
+    @SIASIS-TC-14 @API01 @Iniciar-Sesion-Caso-Tutor
     Scenario: Token de tutor en TODAS las URLs disponibles
         * def results = []
         * def successCount = 0

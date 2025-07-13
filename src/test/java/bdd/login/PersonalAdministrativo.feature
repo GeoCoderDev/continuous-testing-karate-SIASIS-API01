@@ -7,6 +7,7 @@ Feature: Inicio de Sesion de Personal Administrativo
         * karate.log('🌐 Environments disponibles:', environments)
         * karate.log('🔢 Total de URLs a probar:', environments.length)
 
+    @SIASIS-TC-16 @API01 @Iniciar-Sesion-Personal-Administrativo
     Scenario: Token de personal administrativo en TODAS las URLs disponibles
         * def results = []
         * def successCount = 0

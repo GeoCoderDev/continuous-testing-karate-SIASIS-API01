@@ -5,7 +5,7 @@ Feature: Alternar estado de un auxiliar específico por DNI
     * karate.log('🌐 Environments disponibles:', environments)
     * karate.log('🔢 Total de URLs a probar:', environments.length)
 
-  @CambiarEstadoAuxiliar
+  @SIASIS-TC-30 @API01 @Cambiar-Estado-Auxiliar-Especifico
   Scenario: Cambiar estado de un auxiliar específico por DNI en TODAS las URLs disponibles
     * def results = []
     * def successCount = 0

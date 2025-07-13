@@ -6,6 +6,7 @@ Feature: Inicio de Sesion de Profesor de Secundaria
         * karate.log('🌐 Environments disponibles:', environments)
         * karate.log('🔢 Total de URLs a probar:', environments.length)
 
+    @SIASIS-TC-13 @API01 @Iniciar-Sesion-No-Tutor
     Scenario: Token de profesor de secundaria en TODAS las URLs disponibles
         * def results = []
         * def successCount = 0

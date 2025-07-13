@@ -7,6 +7,7 @@ Feature: Obtencion de datos personales por rol
         * karate.log('🌐 Environments disponibles:', environments)
         * karate.log('🔢 Total de URLs a probar:', environments.length)
 
+    @SIASIS-TC-27 @API01 @Obtener-Mis-Datos-Directivo
     Scenario: Obtener mis datos personales como Directivo en TODAS las URLs disponibles
         * def results = []
         * def successCount = 0
@@ -91,6 +92,7 @@ Feature: Obtencion de datos personales por rol
         # Mostrar detalles de todos los intentos (opcional)
         * karate.log('📋 DETALLES COMPLETOS DE TODAS LAS URLs:', results)
 
+    @SIASIS-TC-24 @API01 @Obtener-Mis-Datos-Profesor-Primaria
     Scenario: Obtener mis datos personales como Profesor de Primaria en TODAS las URLs disponibles
         * def results = []
         * def successCount = 0
@@ -175,6 +177,7 @@ Feature: Obtencion de datos personales por rol
         # Mostrar detalles de todos los intentos (opcional)
         * karate.log('📋 DETALLES COMPLETOS DE TODAS LAS URLs:', results)
 
+    @SIASIS-TC-26 @API01 @Obtener-Mis-Datos-Auxiliar
     Scenario: Obtener mis datos personales como Auxiliar en TODAS las URLs disponibles
         * def results = []
         * def successCount = 0
@@ -259,6 +262,7 @@ Feature: Obtencion de datos personales por rol
         # Mostrar detalles de todos los intentos (opcional)
         * karate.log('📋 DETALLES COMPLETOS DE TODAS LAS URLs:', results)
 
+    @SIASIS-TC-29 @API01 @Obtener-Mis-Datos-No-Tutor
     Scenario: Obtener mis datos personales como Profesor de Secundaria en TODAS las URLs disponibles
         * def results = []
         * def successCount = 0
@@ -343,6 +347,7 @@ Feature: Obtencion de datos personales por rol
         # Mostrar detalles de todos los intentos (opcional)
         * karate.log('📋 DETALLES COMPLETOS DE TODAS LAS URLs:', results)
 
+    @SIASIS-TC-28 @API01 @Obtener-Mis-Datos-Tutor-Secundaria
     Scenario: Obtener mis datos personales como Tutor en TODAS las URLs disponibles
         * def results = []
         * def successCount = 0
@@ -427,6 +432,7 @@ Feature: Obtencion de datos personales por rol
         # Mostrar detalles de todos los intentos (opcional)
         * karate.log('📋 DETALLES COMPLETOS DE TODAS LAS URLs:', results)
 
+    @SIASIS-TC-25 @API01 @Obtener-Mis-Datos-Personal-Admin
     Scenario: Obtener mis datos personales como Personal Administrativo en TODAS las URLs disponibles
         * def results = []
         * def successCount = 0

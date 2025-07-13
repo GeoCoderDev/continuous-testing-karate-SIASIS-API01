@@ -6,6 +6,7 @@ Feature: Inicio de Sesion de Directivo
         * karate.log('🌐 Environments disponibles:', environments)
         * karate.log('🔢 Total de URLs a probar:', environments.length)
 
+    @SIASIS-TC-15 @API01 @Iniciar-Sesion-Directivo
     Scenario: Token de directivo en TODAS las URLs disponibles
         * def results = []
         * def successCount = 0

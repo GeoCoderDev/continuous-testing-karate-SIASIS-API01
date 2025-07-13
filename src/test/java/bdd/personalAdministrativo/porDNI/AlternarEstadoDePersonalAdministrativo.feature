@@ -1,4 +1,4 @@
-
+@CambiarEstadoPersonalAdminEspecifico
 Feature: Alternar estado de un personal administrativo especifico por DNI
 
   Background:
@@ -6,7 +6,7 @@ Feature: Alternar estado de un personal administrativo especifico por DNI
     * karate.log('🌐 Environments disponibles:', environments)
     * karate.log('🔢 Total de URLs a probar:', environments.length)
 
-  @CambiarEstadoPersonalAdmin
+  @SIASIS-TC-33 @API01 @Cambiar-Estado-Personal-Admin-Especifico
   Scenario: Cambiar estado de un personal administrativo específico por DNI en TODAS las URLs disponibles
     * def results = []
     * def successCount = 0

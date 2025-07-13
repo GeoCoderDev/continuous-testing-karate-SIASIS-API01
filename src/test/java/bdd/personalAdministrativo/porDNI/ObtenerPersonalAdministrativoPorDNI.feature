@@ -1,4 +1,4 @@
-
+@PersonalAdminEspecificoDni
 Feature: Obtener datos de un Personal Administrativo específico por DNI
 
   Background:
@@ -6,7 +6,7 @@ Feature: Obtener datos de un Personal Administrativo específico por DNI
     * karate.log('🌐 Environments disponibles:', environments)
     * karate.log('🔢 Total de URLs a probar:', environments.length)
 
-  @AdminEspecificoDNI
+  @SIASIS-TC-34 @API01 @Obtener-Datos-Personal-Admin-Especifico
   Scenario: Ver datos de un personal administrativo específico por DNI en TODAS las URLs disponibles
     * def results = []
     * def successCount = 0

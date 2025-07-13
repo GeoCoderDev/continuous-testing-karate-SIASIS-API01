@@ -5,7 +5,7 @@ Feature: Obtener todos los auxiliares registrados en el sistema
     * karate.log('🌐 Environments disponibles:', environments)
     * karate.log('🔢 Total de URLs a probar:', environments.length)
 
-  @obtencion @smoke @API01 @RDP02 @directivo @auxiliar
+  @SIASIS-TC-32 @obtencion @smoke @API01 @RDP02 @directivo @auxiliar
   Scenario: Ver todos los auxiliares con Directivo en TODAS las URLs disponibles
     * def results = []
     * def successCount = 0

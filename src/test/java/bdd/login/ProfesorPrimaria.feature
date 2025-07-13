@@ -7,6 +7,7 @@ Feature: Inicio de Sesion de Profesor de Primaria
         * karate.log('🌐 Environments disponibles:', environments)
         * karate.log('🔢 Total de URLs a probar:', environments.length)
 
+    @SIASIS-TC-17 @API01 @Iniciar-Sesion-Profesor-Primaria
     Scenario: Token de profesor de primaria en TODAS las URLs disponibles
         * def results = []
         * def successCount = 0

@@ -5,7 +5,7 @@ Feature: Obtener datos de un auxiliar específico por DNI
     * karate.log('🌐 Environments disponibles:', environments)
     * karate.log('🔢 Total de URLs a probar:', environments.length)
 
-  @AuxiliarEspecificoDNI
+  @SIASIS-TC-31 @API01 @Obtener-Datos-Auxiliar-Especifico
   Scenario: Ver datos de auxiliar específico por DNI en TODAS las URLs disponibles
     * def results = []
     * def successCount = 0

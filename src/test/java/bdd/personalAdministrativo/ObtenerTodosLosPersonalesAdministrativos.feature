@@ -1,4 +1,4 @@
-
+@ObtenerTodosPersonalAdmin
 Feature: Obtener todos los personales administrativos registrados en el sistema
 
     Background:
@@ -6,7 +6,7 @@ Feature: Obtener todos los personales administrativos registrados en el sistema
         * karate.log('🌐 Environments disponibles:', environments)
         * karate.log('🔢 Total de URLs a probar:', environments.length)
 
-    @TodosPersonalesAdmin
+    @SIASIS-TC-35 @API01 @Ver-Todos-Personal-Admin-Directivo
     Scenario: Ver todos los personales Administrativos en TODAS las URLs disponibles
         * def results = []
         * def successCount = 0

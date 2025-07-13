@@ -7,6 +7,7 @@ Feature: Modificar mi propia foto de perfil
     * karate.log('🌐 Environments disponibles:', environments)
     * karate.log('🔢 Total de URLs a probar:', environments.length)
 
+  @SIASIS-TC-18 @API01 @Modificar-Foto-Perfil-Profesor-Primaria
   Scenario: Modificar foto de perfil como Profesor de Primaria en TODAS las URLs disponibles
     * def results = []
     * def successCount = 0
@@ -93,6 +94,7 @@ Feature: Modificar mi propia foto de perfil
         # Mostrar detalles de todos los intentos (opcional)
     * karate.log('📋 DETALLES COMPLETOS DE TODAS LAS URLs:', results)
 
+  @SIASIS-TC-19 @API01 @Modificar-Foto-Perfil-Auxiliar
   Scenario: Modificar foto de perfil como Auxiliar en TODAS las URLs disponibles
     * def results = []
     * def successCount = 0
@@ -179,6 +181,7 @@ Feature: Modificar mi propia foto de perfil
         # Mostrar detalles de todos los intentos (opcional)
     * karate.log('📋 DETALLES COMPLETOS DE TODAS LAS URLs:', results)
 
+  @SIASIS-TC-20 @API01 @Modificar-Foto-Perfil-No-Tutor
   Scenario: Modificar foto de perfil como Profesor de Secundaria en TODAS las URLs disponibles
     * def results = []
     * def successCount = 0
@@ -265,6 +268,7 @@ Feature: Modificar mi propia foto de perfil
         # Mostrar detalles de todos los intentos (opcional)
     * karate.log('📋 DETALLES COMPLETOS DE TODAS LAS URLs:', results)
 
+  @SIASIS-TC-21 @API01 @Modificar-Foto-Perfil-Tutor-Secundaria
   Scenario: Modificar foto de perfil como Tutor en TODAS las URLs disponibles
     * def results = []
     * def successCount = 0
@@ -351,6 +355,7 @@ Feature: Modificar mi propia foto de perfil
         # Mostrar detalles de todos los intentos (opcional)
     * karate.log('📋 DETALLES COMPLETOS DE TODAS LAS URLs:', results)
 
+  @SIASIS-TC-22 @API01 @Modificar-Foto-Perfil-Directivo
   Scenario: Modificar foto de perfil como Directivo en TODAS las URLs disponibles
     * def results = []
     * def successCount = 0
@@ -437,6 +442,7 @@ Feature: Modificar mi propia foto de perfil
         # Mostrar detalles de todos los intentos (opcional)
     * karate.log('📋 DETALLES COMPLETOS DE TODAS LAS URLs:', results)
 
+  @SIASIS-TC-23 @API01 @Modificar-Foto-Perfil-Personal-Admin
   Scenario: Modificar foto de perfil como Personal Administrativo en TODAS las URLs disponibles
     * def results = []
     * def successCount = 0
