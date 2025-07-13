@@ -1,10 +1,11 @@
+@ObtenerTodosAuxiliares
 Feature: Prueba Todos Datos Auxiliares
 
     Background:
         * url baseUrl
 
-    @TodosAuxiliares
-    Scenario: Ver todos los auxiliares con Directivo
+    @SIASIS-TC-32 @API01 @Ver-Todos-Auxiliares-Directivo
+    Scenario: Obtener todos los datos de los auxiliares
         * def loginResult = call read('classpath:resources/features/login/Directivo.feature')
         * def token = loginResult.token
         Given path '/api/auxiliares'

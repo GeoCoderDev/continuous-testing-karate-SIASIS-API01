@@ -1,9 +1,10 @@
+@CambiarEstadoAuxiliarEspecifico
 Feature: Cambiar estado de un auxiliar específico por DNI
 
     Background:
         * url baseUrl
 
-    @CambiarEstadoAuxiliar
+    @SIASIS-TC-30 @API01 @Cambiar-Estado-Auxiliar-Especifico
     Scenario: Cambiar estado de un auxiliar específico por DNI
         * def auxiResult = call read('classpath:resources/features/auxiliares/Todos.feature')
         * def DNI_Auxiliar = auxiResult.DNI

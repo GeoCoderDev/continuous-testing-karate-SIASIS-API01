@@ -1,9 +1,9 @@
-@misDatos
+@MisDatos
 Feature: Prueba mis Datos
 Background:
     * url baseUrl
-
-Scenario: Token de profesor primaria
+@SIASIS-TC-24 @API01 @Obtener-Mis-Datos-Profesor-Primaria
+Scenario: Obtener mis datos como Profesor Primaria
     * def loginResult = call read('../login/ProfesorPrimaria.feature')
     * def token = loginResult.token
     Given path '/api/mis-datos'
@@ -11,7 +11,8 @@ Scenario: Token de profesor primaria
     When method get
     Then status 200
 
-Scenario: Token de personal admin
+@SIASIS-TC-25 @API01 @Obtener-Mis-Datos-Personal-Admin
+Scenario: Obtener mis datos como Personal Admin
     * def loginResult = call read('../login/PersonalAdmin.feature')
     * def token = loginResult.token
     Given path '/api/mis-datos'
@@ -19,7 +20,8 @@ Scenario: Token de personal admin
     When method get
     Then status 200
 
-Scenario: Token de auxiliar
+@SIASIS-TC-26 @API01 @Obtener-Mis-Datos-Auxiliar
+Scenario: Obtener mis datos como Auxiliar
     * def loginResult = call read('../login/Auxiliar.feature')
     * def token = loginResult.token
     Given path '/api/mis-datos'
@@ -27,7 +29,8 @@ Scenario: Token de auxiliar
     When method get
     Then status 200
 
-Scenario: Token de directivo
+@SIASIS-TC-27 @API01 @Obtener-Mis-Datos-Directivo
+Scenario: Obtener mis datos como Directivo
     * def loginResult = call read('../login/Directivo.feature')
     * def token = loginResult.token
     Given path '/api/mis-datos'
@@ -35,7 +38,8 @@ Scenario: Token de directivo
     When method get
     Then status 200
 
-Scenario: Token de tutor secundaria
+@SIASIS-TC-28 @API01 @Obtener-Mis-Datos-Tutor-Secundaria
+Scenario: Obtener mis datos como Tutor Secundaria
     * def loginResult = call read('../login/CasoTutorSecundaria.feature')
     * def token = loginResult.token
     Given path '/api/mis-datos'
@@ -43,7 +47,8 @@ Scenario: Token de tutor secundaria
     When method get
     Then status 200
 
-Scenario: Token de no tutor
+@SIASIS-TC-29 @API01 @Obtener-Mis-Datos-No-Tutor
+Scenario: Obtener mis datos como No Tutor
     * def loginResult = call read('../login/CasoNoTutor.feature')
     * def token = loginResult.token
     Given path '/api/mis-datos'

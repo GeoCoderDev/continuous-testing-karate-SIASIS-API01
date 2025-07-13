@@ -1,10 +1,11 @@
+@AuxiliarEspecificoDni
 Feature: Obtener datos de un auxiliar específico DNI
 
     Background:
         * url baseUrl
 
-    @AuxiliarEspecificoDNI
-    Scenario: Ver datos de auxiliar específico por DNI
+    @SIASIS-TC-31 @API01 @Obtener-Datos-Auxiliar-Especifico
+    Scenario: Obtener datos de auxiliar específico por DNI
         * def auxiResult = call read('classpath:resources/features/auxiliares/Todos.feature')
         * def DNI_Auxiliar = auxiResult.DNI
         Given path '/api/auxiliares/' + DNI_Auxiliar

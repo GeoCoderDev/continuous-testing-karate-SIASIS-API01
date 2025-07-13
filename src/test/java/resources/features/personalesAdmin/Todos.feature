@@ -1,10 +1,11 @@
+@ObtenerTodosPersonalAdmin
 Feature: Prueba Todos Datos Auxiliares
 
     Background:
         * url baseUrl
 
-    @TodosPersonalesAdmin
-    Scenario: Ver todos los personales Administrativos
+    @SIASIS-TC-35 @API01 @Ver-Todos-Personal-Admin-Directivo
+    Scenario: Obtener todos los datos de los personales Administrativos
         * def loginResult = call read('classpath:resources/features/login/Directivo.feature')
         * def token = loginResult.token
         Given path '/api/personal-administrativo'

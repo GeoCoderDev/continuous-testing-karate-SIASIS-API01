@@ -1,9 +1,10 @@
-@profesorPrimariaPrueba
+@PruebaProfesorPrimaria
 Feature: Prueba Directivo
 
     Background:
         * url baseUrl
 
+    @SIASIS-TC-17 @API01 @Iniciar-Sesion-Profesor-Primaria
     Scenario: Token de directivo
         Given path '/api/login/profesor-primaria'
         And request { "Nombre_Usuario": "marisol_godoy_1537", "Contraseña": "15378317" }
